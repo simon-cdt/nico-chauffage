@@ -15,8 +15,6 @@ const services = [
       "Systèmes de chauffage adaptés aux habitations individuelles et immeubles résidentiels.",
     items: [
       "Pompe à chaleur",
-      "Chaudière au mazout",
-      "Chaudière à gaz",
       "Radiateurs",
       "Chauffage au sol",
     ],
@@ -29,7 +27,6 @@ const services = [
     items: [
       "Nettoyage des installations",
       "Rinçage du chauffage au sol",
-      "Entretien des pompes à chaleur",
       "Contrôle de la tuyauterie",
     ],
   },

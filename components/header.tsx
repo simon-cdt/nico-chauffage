@@ -4,6 +4,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Flame } from "lucide-react";
 import { Twirl as Hamburger } from "hamburger-react";
+import Image from "next/image";
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -33,12 +34,14 @@ export function Header() {
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <a href="#" className="flex items-center gap-2">
-              <div className="bg-primary flex h-10 w-10 items-center justify-center rounded-lg">
+              {/* <div className="bg-primary flex h-10 w-10 items-center justify-center rounded-lg">
                 <Flame className="text-primary-foreground h-6 w-6" />
-              </div>
+              </div> 
               <span className="text-foreground text-xl font-semibold">
                 Nico Chauffage
-              </span>
+              </span> */}
+              <Image src={"/logo.png"} alt="Logo" width={1000} height={1000} className="h-16 max-md:h-14 w-fit"  />
+              
             </a>
 
             {/* Desktop Navigation */}
