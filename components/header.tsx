@@ -30,8 +30,8 @@ export function Header() {
 
   return (
     <>
-      <header className="bg-background/95 border-border z-50 flex h-22.5 items-center border-b backdrop-blur-sm">
-        <div className="container mx-auto px-4 py-4">
+      <header className="bg-background/95 border-border z-50 flex md:h-30 h-22.5 items-center border-b backdrop-blur-sm">
+        <div className="container mx-auto px-4 md:py-4 py-2">
           <div className="flex items-center justify-between">
             <a href="#" className="flex items-center gap-2">
               {/* <div className="bg-primary flex h-10 w-10 items-center justify-center rounded-lg">
@@ -40,7 +40,7 @@ export function Header() {
               <span className="text-foreground text-xl font-semibold">
                 Nico Chauffage
               </span> */}
-              <Image src={"/logo.png"} alt="Logo" width={1000} height={1000} className="h-16 max-md:h-14 w-fit"  />
+              <Image src={"/logo_white.png"} alt="Logo" width={1000} height={1000} className="h-28 max-md:h-14 w-fit"  />
               
             </a>
 

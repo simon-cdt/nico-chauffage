@@ -1,4 +1,5 @@
 import { Flame } from "lucide-react";
+import Image from "next/image";
 
 export function Footer() {
   return (
@@ -6,10 +7,7 @@ export function Footer() {
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="flex items-center gap-2">
-            <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-              <Flame className="w-5 h-5 text-primary-foreground" />
-            </div>
-            <span className="font-semibold">Nico Chauffage</span>
+            <Image src={"/logo_black.png"} alt="Logo" width={1000} height={1000} className="h-28 max-md:h-14 w-fit"  />
           </div>
 
           <nav className="flex flex-wrap justify-center gap-6 text-sm text-background/70">

@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Phone, Mail, Globe, MapPin } from "lucide-react";
+import Image from "next/image";
 
 export function Contact() {
   return (
@@ -17,11 +18,11 @@ export function Contact() {
 
         <Card className="max-w-2xl mx-auto bg-card border-border">
           <CardContent className="p-8">
-            <div className="text-center mb-8">
+            <div className="text-center mb-8 flex flex-col items-center">
               <h3 className="text-2xl font-bold text-foreground mb-1">
                 Nicolas Penifaure
               </h3>
-              <p className="text-lg text-primary font-medium">Nico Chauffage</p>
+              <Image src={"/logo_white.png"} alt="Logo" width={1000} height={1000} className="h-18 max-md:h-14 w-fit"  />
             </div>
 
             <div className="space-y-4">
